@@ -1,0 +1,24 @@
+site_name: Okanagan Nation Alliance Geospatial and Remote Sensing Resource Centre
+nav:
+    - Home: 'index.md'
+    - Areas of Support:
+        - 'The Team': 'support/support.md'
+        - 'GIS': 'support/gis/gis.md'
+        - 'Drones': 'support/drones/drones.md'
+    - Work Requests: 'requests/requests.md'
+    - Resources: 'resources/resources.md'
+theme:
+    name: material
+    logo: img/ONA-logo.png
+    favicon: img/ona_favicon.png
+
+plugins:
+    - search:
+          indexing: 'full'
+    - encryptcontent:
+        global_password: 'ona_123_letmein'
+        title_prefix: ''
+        summary: 'Please Enter the password to access this site'
+        decryption_failure_message: "oops that's not right"
+        remember_password: True
+        default_expire_delay: 24
